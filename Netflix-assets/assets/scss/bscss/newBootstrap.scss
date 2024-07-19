@@ -1,18 +1,14 @@
 @import './functions';
 @import './variables';
-@import "variables-dark";
-@import "maps";
-@import "mixins";
-@import "utilities";
 
 
 /*Creo nuove variabili per i nuovi colori*/
-$new-hero: #7550fe;
-$new-success: #1acb98;
+$new-primary:#141414;
+$new-secondary: #fbfbfb;
 
 $new-colors: (
-  'hero': $new-hero,
-  'success': $new-success,
+  'primary': $new-primary,
+  'secondary': $new-secondary,
 );
 
 $theme-colors: map-merge($theme-colors, $new-colors);
@@ -62,6 +58,12 @@ $new-position-values: (
 );
 
 $position-values: map-merge($position-values, $new-position-values);
+
+@import "variables-dark";
+@import "maps";
+@import "mixins";
+@import "utilities";
+
 
 $utilities: map-merge($utilities,
     ("width": map-merge(map-get($utilities, "width"),
