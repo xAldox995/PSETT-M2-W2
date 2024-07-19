@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,102 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./Netflix-assets/assets/scss/bscss/newBootstrap.css">
 </head>
-<body  class="bg-dark">
+
+<body class="bg-primary">
     <header>
         <nav class="navbar navbar-expand-lg d.flex">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="w-10" src="/Netflix-assets/assets/netflix_logo.png" alt="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="container-fluid ">
+                <div class=" d-flex align-items-center justify-content-betwen">
+                    <a class="navbar-brand" href="#"><img class="w-45" src="/Netflix-assets/assets/netflix_logo.png"
+                            alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="navbar-toggler-icon text-secondary" href="#"></a>
+                    </button>
+                </div>
+                <!-- <a class="navbar-brand" href="#"><img class="w-45" src="/Netflix-assets/assets/netflix_logo.png"
+                        alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-toggler-icon text-secondary" href="#"></a>
+                </button> -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex flex-row align-items-center justify-content-between ">
+                        <li class="nav-item m-2">
+                            <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link text-secondary" href="#">TVSHOW</a>
+                        </li>
+                        <li class="nav-item m-3">
+                            <a class="nav-link text-secondary" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link text-secondary" href="#">RecentAdded</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link text-secondary" href="#">MyList</a>
+                        </li>
+                        <!-- <li class="nav-item m-2">
+                            <a class="nav-link text-secondary" href="#"> <i class="bi bi-search"></i></a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link text-secondary" href="#">
+                                KIDS
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="container row d-flex align-items-center justify-content-center">
+                    <div class="row d-flex align-items-center justify-content-betwen">
+                        <div class="col-6">
+                            <ul class="d-flex align-items-center justify-content-evenly list-unstyled ">
+                                <li class="nav-item m-3">
+                                    <a class="nav-link text-secondary" href="#"> <i class="bi bi-search"></i></a>
+                                </li>
+                                <li class="nav-item m-3">
+                                    <a class="nav-link text-secondary" href="#">
+                                        KIDS
+                                    </a>
+                                </li>
+                                <li class="nav-item m-3">
+                                    <a class="navbar-brand text-secondary" href="#">
+                                        <i class="bi bi-bell-fill "></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 flex-grow-1">
+                            <form action="paginaUtente.html">
+                                <button class="btn btn-primary w-35" type="button">
+                                    <img class="w-100" src="/Netflix-assets/assets/avatar.png" alt="avatar">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </nav>
+            </div>
+        </nav>
     </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="text-secondary mx-5 d-flex align-items-center justify-content-between justify-content-md-start">
+        <h1 class="">Tv Shows</h1>
+        <div class="dropdown ms-md-10">
+            <button class="btn btn-outline-secondary dropdown-toggle bolder border-color-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Generes
+            </button>
+            <ul class="dropdown-menu bg-primary ">
+              <li><a class="dropdown-item text-secondary" href="#">Action</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Fantasy</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Horror</a></li>
+            </ul>
+          </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
